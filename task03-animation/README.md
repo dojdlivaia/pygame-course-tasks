@@ -16,7 +16,7 @@
 
 ```python
 bg = pygame.image.load('images/bg.jpg')
-bg = pygame.transform.scale(bg, (806, 450))
+bg = pygame.transform.scale(bg, (WIDTH, HEIGHT))
 ```
 
 > **`pygame.transform.scale(картинка, (ширина, высота))`** — берёт картинку (`Surface`) и возвращает **новую картинку нужного размера**. Старая не меняется, результат нужно присвоить. Пропорции не сохраняются. Есть похожая команда `pygame.transform.smoothscale` — она делает то же самое, но сглаживает пиксели. `scale` работает быстрее, `smoothscale` — красивее.
